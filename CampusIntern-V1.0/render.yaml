@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: campus-intern
+    env: php
+    plan: free
+    buildCommand: ""
+    startCommand: ""
+    staticPublishPath: public
+    autoDeploy: true

@@ -1,0 +1,15 @@
+# Block PHP execution
+<FilesMatch "\.(php|php5|phtml)$">
+    Deny from all
+</FilesMatch>
+
+# Allow file access (pdf, jpg, png, etc.)
+<FilesMatch "\.(jpg|jpeg|png|pdf|doc|docx)$">
+    Allow from all
+</FilesMatch>
+
+<Files "*.sqlite">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
